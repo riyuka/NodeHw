@@ -24,7 +24,7 @@ var command = process.argv.slice(2);
 
 function displayTweets() {
     var tweetArr = [];
-    var params = {screen_name: 'kannasama77', count: 200};
+    var params = {screen_name: 'kannasama77', count: 20};
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
         if (error) {
             throw error;
